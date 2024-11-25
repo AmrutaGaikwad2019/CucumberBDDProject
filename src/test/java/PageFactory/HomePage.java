@@ -1,0 +1,24 @@
+package PageFactory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class HomePage {
+
+	private WebDriver driver;
+
+	//Arrage
+	@FindBy(linkText="Log out")private WebElement btn_Logout;
+
+	public HomePage(WebDriver driver){
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+
+	//Act
+	public void hitLogout() {
+		btn_Logout.click();
+	}
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="14.904" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="To test login functionality" name="login with valid credentials - #1.1" time="5.942">
+<system-out><![CDATA[
+Given Browser is open.......................................................passed
+And I am on login page......................................................passed
+When I enter student and Password123........................................passed
+And I hit submit button.....................................................passed
+Then I am navigated to home page............................................passed
+And I click X button to close page..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test login functionality" name="login with invalid credentials - #1.1" time="4.008">
+<system-out><![CDATA[
+Given Browser is open.......................................................passed
+And I am on login page......................................................passed
+When I enter incorrectUser and Password123..................................passed
+And I hit submit button.....................................................passed
+Then I get error message- Your username is invalid..........................passed
+And I click X button to close page..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test login functionality" name="login with invalid credentials - #1.1" time="4.771">
+<system-out><![CDATA[
+Given Browser is open.......................................................passed
+And I am on login page......................................................passed
+When I enter student and incorrectPassword..................................passed
+And I hit submit button.....................................................passed
+Then I get error message- Your password is invalid..........................passed
+And I click X button to close page..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
